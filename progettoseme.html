@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina di Benvenuto</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .welcome-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            background: linear-gradient(135deg, #6e8efb, #4a6cf7);
+            color: white;
+            text-align: center;
+        }
+
+        .welcome-content {
+            max-width: 600px;
+            padding: 20px;
+        }
+
+        .welcome-content h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .welcome-content p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        .welcome-content button {
+            padding: 15px 30px;
+            font-size: 1rem;
+            color: #4a6cf7;
+            background-color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .welcome-content button:hover {
+            background-color: #f0f0f0;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="welcome-container">
+        <div class="welcome-content">
+            <h1>Benvenuto!</h1>
+            <p>Grazie per aver visitato il nostro sito. Siamo felici di averti qui. Esplora e scopri tutto ciò che abbiamo da offrire.</p>
+            <button onclick="alert('Benvenuto!')">Inizia</button>
+        </div>
+    </div>
+</body>
+</html>
